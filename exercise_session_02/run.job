@@ -1,11 +1,11 @@
 #!/bin/bash -l
 #SBATCH --job-name="my-job"
-#SBATCH --time=00:30:00
+#SBATCH --time=00:01:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-core=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=1
-#SBATCH --partition=debug
+#SBATCH --partition=SELECT_PARTITION
 #SBATCH --constraint=mc
 #SBATCH --output="output.log"
 #SBATCH --error="error.log"
