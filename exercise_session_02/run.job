@@ -7,8 +7,7 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --partition=SELECT_PARTITION
 #SBATCH --constraint=mc
-#SBATCH --output="output.log"
-#SBATCH --error="error.log"
+
 
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
