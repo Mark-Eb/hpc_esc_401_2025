@@ -5,8 +5,10 @@
 #SBATCH --ntasks-per-core=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=1
-#SBATCH --partition=
+#SBATCH --partition=debug
 #SBATCH --constraint=mc
+#SBATCH --output="output.log"
+#SBATCH --error="error.log"
 
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
