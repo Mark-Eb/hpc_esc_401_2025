@@ -1,0 +1,15 @@
+#!/bin/bash -l
+#SBATCH --job-name="poisson_OMP"
+#SBATCH --account="uzh8"
+#SBATCH --time=00:05:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-core=1
+#SBATCH --ntasks-per-node=1
+#        #SBATCH --cpus-per-task=1
+#SBATCH --partition=debug
+#SBATCH --constraint=mc
+#SBATCH --hint=nomultithread
+#        #SBATCH --output=out_poisson_OMP.log
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+echo "params: $0, $1, $2"
+srun main

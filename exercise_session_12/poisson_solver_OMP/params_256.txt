@@ -1,0 +1,6 @@
+rhs_function=2
+nx=256
+ny=256
+foutput=100000
+nstep_max=100000
+tolerance=1.0E-08
